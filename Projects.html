@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Projects Page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="project-body" style="background-image: url('bostonwall.jpg');"> 
+	<div class='proj-nav-wrapper'>
+		<div class="proj-left-side">
+				<div class='nav-link-wrapper'>
+					<a href="index.html">Home</a>
+				</div>
+				<div class='nav-link-wrapper'>
+					<a href="about.html">About</a>
+				</div>
+				<div class='nav-link-wrapper'>
+					<a href="Projects.html">Projects</a>
+				</div>
+				<span class="stretch"></span>
+			</div>
+		</div>
+
+
+	<div class="content-wrapper">
+		<div class="header-wrapper">
+			<div class="portfolio-header">
+				<h2 style="color:white;"> Projects </h2>
+			</div>
+			<div class="portfolio-underline">
+			</div>
+		</div>
+
+
+		<div class="portfolio-items-wrapper">
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-img-background" style="background-image:url(boxes.jpg);">
+				</div>
+
+				<div class="img-text-wrapper">
+					<a href="https://github.com/pvicks585/AmazonFineFood"><div class="subtitle">
+						Amazon Logistic Regression
+					</div></a>
+				</div>	
+			</div>
+
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-img-background" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/f/fd/RMS_Titanic_3.jpg)">
+					
+				</div>
+
+				<div class="img-text-wrapper">
+					<a href="https://github.com/pvicks585/Titanic_final_vicks"><div class="subtitle">
+						Titanic Machine Learning
+					</div></a>
+				</div>	
+			</div>
+
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-img-background" style="background-image:url(https://static.clubs.nfl.com/image/private/t_landscape_tablet_2x/f_auto/bengals/qcnumbnierzjrsvilwwj.jpg); height: 100%; width:100%;">
+					
+				</div>
+
+				<div class="img-text-wrapper">
+					<div class="logo-wrapper">
+						<img scr="https://static.clubs.nfl.com/image/private/t_landscape_tablet_2x/f_auto/bengals/qcnumbnierzjrsvilwwj.jpg">
+					</div>
+					<a href="https://github.com/pvicks585/NFLStats"><div class="subtitle">
+						NFL Webscrape
+					</div></a>
+				</div>	
+			</div>
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-img-background" style="background-image:url(Newspaper.jpg)">
+				</div>
+
+				<div class="img-text-wrapper">
+					<a href="https://github.com/pvicks585/TextKmeans"><div class="subtitle">
+						News Headline Kmeans
+					</div></a>
+				</div>	
+			</div>
+
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-img-background" style="background-image:url(wallstreet.jpg)">	
+				</div>
+
+				<div class="img-text-wrapper">
+					<a href="https://github.com/pvicks585/stock_news"><div class="subtitle">
+						Email Stock Alert
+					</div></a>
+				</div>	
+			</div>
+
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-img-background" style="background-image:url(moviesb.png)">
+					
+				</div>
+
+				<div class="img-text-wrapper">
+					<a href="movies.html"><div class="subtitle">
+						Movie Recomendations
+					</div></a>
+				</div>	
+			</div>
+		</div>
+	
+
+		<div class="certificates">
+			<div class="cert-header">
+				<h2 style="color:white;"> Certificates </h2>
+			</div>
+			<div class="cert-underline">
+			</div>
+			<div class="cert-box">
+				<div class="cert-img-wrap">
+					<a href="Coursera MC98X5GLA5A7.pdf">
+						<img src="Coursera MC98X5GLA5A7_page-0001.jpg">
+					</a>
+				</div>
+				<div class="cert-txt-wrap">
+					<h3> Mathematics for Machine Learning: Linear Algebra </h3>
+					<p> In this course on Linear Algebra we look at what linear algebra is and how it relates to vectors and matrices. Then we look through what vectors and matrices are and how to work with them, including the knotty problem of eigenvalues and eigenvectors, and how to use these to solve problems. Finally  we look at how to use these to do fun things with datasets - like how to rotate images of faces and how to extract eigenvectors to look at how the Pagerank algorithm works. </p>
+					<h5> Date Earned: April 11th 2020 </h5>
+
+				</div>
+			</div>
+			<div class="cert-box-2">
+				<div class="cert-img-wrap">
+					<a href="Coursera ZFVUNFKKN4W4.pdf">
+						<img src="Coursera ZFVUNFKKN4W4_page-0001.jpg">
+					</a>
+				</div>
+				<div class="cert-txt-wrap">
+					<h3> Introduction To Portfolio Construction </h3>
+					<p> The practice of investment management has been transformed in recent years by computational methods. This course provides an introduction to the underlying science, with the aim of giving you a thorough understanding of that scientific basis. However, instead of merely explaining the science, we help you build on that foundation in a practical manner, with an emphasis on the hands-on implementation of those ideas in the Python programming language. </p>
+					<h5> Date Earned: March 8th 2020 </h5>
+				</div>
+			</div>
+		</div>
+		<address style="text-align: center; margin: 0px; color:white; padding-bottom:2%; font-family: Palatino Linotype;">
+		    Contact me at <a style="color: white;" href="pvicks585@gmail.com">
+		    pvicks585@gmail.com</a>.<br>
+	  	</address>	
+	</div>
+</body>
+<script type="text/javascript">
+	const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+	portfolioItems.forEach(portfolioItem => {
+		portfolioItem.addEventListener('mouseover', () =>{
+			portfolioItem.childNodes[1].classList.add('img-darken');
+		})
+
+		portfolioItem.addEventListener('mouseout', () =>{
+			portfolioItem.childNodes[1].classList.remove('img-darken');
+		})
+	})
+</script>
+</html>
+
